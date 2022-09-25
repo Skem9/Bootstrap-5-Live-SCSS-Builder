@@ -1,8 +1,31 @@
 {
-"isGitignoreExtActive": true,
-	"cSpell.words": [
-		"buildkitd",
-		"prebuilds",
-		"WEBSERVER"
+	"workbench.view.alwaysShowHeaderActions": true,
+	"workbench.editor.enablePreviewFromCodeNavigation": true,
+	"workbench.editor.enablePreviewFromQuickOpen": true,
+	"colorize.colorized_variables": [
+		"CSS",
+		"SCSS",
+		"SASS"
+	],
+	"livePreview.showServerStatusNotifications": true,
+	"livePreview.debugOnExternalPreview": true,
+	"livePreview.portNumber": 5500,
+	"liveSassCompile.settings.autoprefix": true,
+	"liveSassCompile.settings.excludeList":[
+		"/**/node_modules/**",
+		"/.vscode/**",
+	],
+	"liveSassCompile.settings.includeItems": [
+		"Brandy/css.scss"
+	],
+	"liveSassCompile.settings.showOutputWindowOn": "Trace",
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "assets/css/",
+			"savePathReplacementPairs": null
+		}
 	]
+
 }
