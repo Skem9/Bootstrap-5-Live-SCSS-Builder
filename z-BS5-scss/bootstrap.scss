@@ -1,54 +1,52 @@
-@import "mixins/_banner.scss";
+@import "mixins/banner";
 @include bsBanner("");
 
 
 // scss-docs-start import-stack
 // Configuration
-@import "_functions.scss";
+@import "functions";
 
-@import "../Brandy/css.scss";
-
-@import "_variables.scss";
-@import "_maps.scss";
-@import "_mixins.scss";
-@import "_utilities.scss";
+@import "variables";
+@import "maps";
+@import "mixins";
+@import "utilities";
 
 // Layout & components
-@import "_root.scss";
-@import "_reboot.scss";
-@import "_type.scss";
-@import "_images.scss";
-@import "_containers.scss";
-@import "_grid.scss";
-@import "_tables.scss";
-@import "_forms.scss";
-@import "_buttons.scss";
-@import "_transitions.scss";
-@import "_dropdown.scss";
-@import "_button-group.scss";
-@import "_nav.scss";
-@import "_navbar.scss";
-@import "_card.scss";
-@import "_accordion.scss";
-@import "_breadcrumb.scss";
-@import "_pagination.scss";
-@import "_badge.scss";
-@import "_alert.scss";
-@import "_progress.scss";
-@import "_list-group.scss";
-@import "_close.scss";
-@import "_toasts.scss";
-@import "_modal.scss";
-@import "_tooltip.scss";
-@import "_popover.scss";
-@import "_carousel.scss";
-@import "_spinners.scss";
-@import "_offcanvas.scss";
-@import "_placeholders.scss";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
 
 // Helpers
-@import "_helpers.scss";
+@import "helpers";
 
 // Utilities
-@import "utilities/_api.scss";
+@import "utilities/api";
 // scss-docs-end import-stack
