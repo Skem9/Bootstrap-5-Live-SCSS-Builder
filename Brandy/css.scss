@@ -1,33 +1,35 @@
-$black: #eee;
-$white: #111;
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
 // scss-docs-end gray-color-variables
 
 // scss-docs-start color-variables
-$blue:    #3e74c4 !default;
-$indigo:  #51367e !default;
-$purple:  #2c007e !default;
-$pink:    #ff00cc !default;
-$red:     #bd2727 !default;
-$orange:  #e08700 !default;
-$yellow:  #ecc900 !default;
-$green:   #21af21 !default;
-$teal:    #0e976e !default;
-$cyan:    #4cc0c0 !default;
+$blue:    #3e74c4;
+$indigo:  #51367e;
+$purple:  #2c007e;
+$pink:    #ff00cc;
+$red:     #bd2727;
+$orange:  #e08700;
+$yellow:  #ecc900;
+$green:   #21af21;
+$teal:    #1ddd84;
+$cyan:    #4cc0c0;
+
+$black: #eee;
+$white: #111;
+
 
 // scss-docs-start theme-color-variables
-$primary:       $teal;
+$primary:       $blue;
 $secondary:     $indigo;
 $success:       $green;
 $info:          $cyan;
