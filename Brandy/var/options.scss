@@ -2,33 +2,33 @@
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:   4.5;
 
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:                true !default;
-$enable-rounded:              true !default;
-$enable-shadows:              false !default;
-$enable-gradients:            false !default;
-$enable-transitions:          true !default;
-$enable-reduced-motion:       true !default;
-$enable-smooth-scroll:        true !default;
-$enable-grid-classes:         true !default;
-$enable-container-classes:    true !default;
-$enable-cssgrid:              false !default;
-$enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
-$enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
-$enable-deprecation-messages: true !default;
-$enable-important-utilities:  true !default;
+$enable-caret:                true;
+$enable-rounded:              true;
+$enable-shadows:              false;
+$enable-gradients:            false;
+$enable-transitions:          true;
+$enable-reduced-motion:       true;
+$enable-smooth-scroll:        true;
+$enable-grid-classes:         true;
+$enable-container-classes:    true;
+$enable-cssgrid:              false;
+$enable-button-pointers:      true;
+$enable-rfs:                  true;
+$enable-validation-icons:     true;
+$enable-negative-margins:     false;
+$enable-deprecation-messages: true;
+$enable-important-utilities:  true;
 
 // Prefix for :root CSS variables
 
-$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
-$prefix:                      $variable-prefix !default;
+$variable-prefix:             bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix;
 
 
 // spacing
