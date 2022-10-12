@@ -1,0 +1,33 @@
+//! Editing this file has no effect on your previewer
+$border-width:                1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
+
+$border-style:                solid;
+$border-color:                $gray-300;
+$border-color-translucent:    rgba($black, .175);
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius:               .375rem;
+$border-radius-sm:            .25rem;
+$border-radius-lg:            .5rem;
+$border-radius-xl:            1rem;
+$border-radius-2xl:           2rem;
+$border-radius-pill:          50rem;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
+// scss-docs-end box-shadow-variables
+
+$component-active-color:      $white;
+$component-active-bg:         $primary;

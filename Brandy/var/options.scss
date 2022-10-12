@@ -1,0 +1,96 @@
+//! Editing this file has no effect on your previewer
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio:   4.5 !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:                true !default;
+$enable-rounded:              true !default;
+$enable-shadows:              false !default;
+$enable-gradients:            false !default;
+$enable-transitions:          true !default;
+$enable-reduced-motion:       true !default;
+$enable-smooth-scroll:        true !default;
+$enable-grid-classes:         true !default;
+$enable-container-classes:    true !default;
+$enable-cssgrid:              false !default;
+$enable-button-pointers:      true !default;
+$enable-rfs:                  true !default;
+$enable-validation-icons:     true !default;
+$enable-negative-margins:     false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities:  true !default;
+
+// Prefix for :root CSS variables
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+
+// spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+
+//! This is for we using position-absolute|relative|sticky ect
+//! and will default the top|right|bottom|left css classes
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+);
+
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                $gray-900;
+$body-text-align:           null;
+
+
+$paragraph-margin-bottom:   1rem;
+
+
+$transition-base:             all .2s ease-in-out;
+$transition-fade:             opacity .15s linear;
+// scss-docs-start collapse-transition
+$transition-collapse:         height .35s ease;
+$transition-collapse-width:   width .35s ease;
+// scss-docs-end collapse-transition
+
+// stylelint-disable function-disallowed-list
+// scss-docs-start aspect-ratios
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);
+// scss-docs-end aspect-ratios
+
+$legend-margin-bottom:        .5rem;
+$legend-font-size:            1.5rem;
+$legend-font-weight:          null;
+
+$dt-font-weight:              $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-padding:                .1875em;
+$mark-bg:                     $yellow-100;
+
+$placeholder-opacity-max:           .5;
+$placeholder-opacity-min:           .2;
+
+$figure-caption-font-size:          $small-font-size;
+$figure-caption-color:              $gray-600;

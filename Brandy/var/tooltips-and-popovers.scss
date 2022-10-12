@@ -1,0 +1,62 @@
+//! Editing this file has no effect on your previewer
+
+$tooltip-font-size:                 $font-size-sm;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     $white;
+$tooltip-bg:                        $black;
+$tooltip-border-radius:             $border-radius;
+$tooltip-opacity:                   .9;
+$tooltip-padding-y:                 $spacer * .25;
+$tooltip-padding-x:                 $spacer * .5;
+$tooltip-margin:                    null; // TODO: remove this in v6
+
+$tooltip-arrow-width:               .8rem;
+$tooltip-arrow-height:              .4rem;
+// fusv-disable
+$tooltip-arrow-color:               null; // Deprecated in Bootstrap 5.2.0 for CSS variables
+// fusv-enable
+// scss-docs-end tooltip-variables
+
+// Form tooltips must come after regular tooltips
+// scss-docs-start tooltip-feedback-variables
+$form-feedback-tooltip-padding-y:     $tooltip-padding-y;
+$form-feedback-tooltip-padding-x:     $tooltip-padding-x;
+$form-feedback-tooltip-font-size:     $tooltip-font-size;
+$form-feedback-tooltip-line-height:   null;
+$form-feedback-tooltip-opacity:       $tooltip-opacity;
+$form-feedback-tooltip-border-radius: $tooltip-border-radius;
+// scss-docs-end tooltip-feedback-variables
+
+
+// Popovers
+
+// scss-docs-start popover-variables
+$popover-font-size:                 $font-size-sm;
+$popover-bg:                        $white;
+$popover-max-width:                 276px;
+$popover-border-width:              $border-width;
+$popover-border-color:              var(--#{$prefix}border-color-translucent);
+$popover-border-radius:             $border-radius-lg;
+$popover-inner-border-radius:       subtract($popover-border-radius, $popover-border-width);
+$popover-box-shadow:                $box-shadow;
+
+$popover-header-font-size:          $font-size-base;
+$popover-header-bg:                 shade-color($popover-bg, 6%);
+$popover-header-color:              $headings-color;
+$popover-header-padding-y:          .5rem;
+$popover-header-padding-x:          $spacer;
+
+$popover-body-color:                $body-color;
+$popover-body-padding-y:            $spacer;
+$popover-body-padding-x:            $spacer;
+
+$popover-arrow-width:               1rem;
+$popover-arrow-height:              .5rem;
+// scss-docs-end popover-variables
+
+// fusv-disable
+// Deprecated in Bootstrap 5.2.0 for CSS variables
+$popover-arrow-color:               $popover-bg;
+$popover-arrow-outer-color:         var(--#{$prefix}border-color-translucent);
+// fusv-enable
+

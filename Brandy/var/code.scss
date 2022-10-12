@@ -1,0 +1,13 @@
+//! Editing this file has no effect on your previewer
+
+$code-font-size:                    $small-font-size;
+$code-color:                        $pink;
+
+$kbd-padding-y:                     .1875rem;
+$kbd-padding-x:                     .375rem;
+$kbd-font-size:                     $code-font-size;
+$kbd-color:                         var(--#{$prefix}body-bg);
+$kbd-bg:                            var(--#{$prefix}body-color);
+$nested-kbd-font-weight:            null; // Deprecated in v5.2.0, removing in v6
+
+$pre-color:                         null;

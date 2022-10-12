@@ -1,0 +1,13 @@
+//! Editing this file has no effect on your previewer
+
+$hr-margin-y:                 $spacer;
+$hr-color:                    inherit;
+
+// fusv-disable
+$hr-bg-color:                 null; // Deprecated in v5.2.0
+$hr-height:                   null; // Deprecated in v5.2.0
+// fusv-enable
+
+$hr-border-color:             null; // Allows for inherited colors
+$hr-border-width:             $border-width;
+$hr-opacity:                  .25;

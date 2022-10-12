@@ -1,0 +1,56 @@
+//! Editing this file has no effect on your previewer
+
+// Color system
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark:      $black;
+$color-contrast-light:     $white;
+
+// The gradient which is added to components if `$enable-gradients` is `true`
+// This gradient is also added to elements with `.bg-gradient`
+//! path to the options file to enable
+@import url("options.scss"); //! path to the options file to enable
+$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));

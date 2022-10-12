@@ -1,0 +1,10 @@
+//! Editing this file has no effect on your previewer
+
+$link-color:                              $primary;
+$link-decoration:                         underline;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration:                   null;
+
+$stretched-link-pseudo-element:           after;
+$stretched-link-z-index:                  1;
