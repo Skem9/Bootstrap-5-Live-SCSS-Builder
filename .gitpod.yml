@@ -62,4 +62,5 @@ vscode:
     - ritwickdey.LiveServer
     - glenn2223.live-sass
     - kamikillerto.vscode-colorize
-
+    - aaron-bond.better-comments
+    
