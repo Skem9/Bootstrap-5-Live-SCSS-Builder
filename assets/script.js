@@ -58,7 +58,7 @@
 
     sourceModalElement.querySelector('.btn-copy').addEventListener('click', (e) => {
       if (navigator.clipboard) {
-        const code = sourceModalElement.querySelector('.modal-body pre').innerText;
+        const code = sourceModalElement.querySelector('.modal-body pre.language-html').innerText;
         navigator.clipboard.writeText(code);
       }
 
@@ -76,7 +76,17 @@
 
       html = Prism.highlight(cleanSource(html), Prism.languages.html, 'html');
 
-      sourceModalElement.querySelector('code').innerHTML = html;
+      sourceModalElement.querySelector('.language-html code').innerHTML = html;
+			// then find the scss files to load..
+			let scss_var = event.target.parentNode.getAttribute('data-jbs-vars')
+			getSass('../Brandy/var/'+scss_var+'.scss')
+			//sourceModalElement.querySelector('.language-sass code').innerHTML = html;
+			async function getSass(file) {
+				let x = await fetch(file);
+				let y = await x.text();
+				sass = Prism.highlight(y, Prism.languages.css, 'css');
+				sourceModalElement.querySelector('.language-scss code').innerHTML = sass;
+			}
       sourceModal.show();
     }, false);
   }
@@ -98,7 +108,7 @@
   const bsComponents = document.querySelectorAll('.bs-component');
 
   for (const element of bsComponents) {
-    const button = '<button class="source-button btn btn-primary btn-xs" type="button" tabindex="0"><i class="bi bi-code"></i></button>';
+    const button = '<button class="source-button btn btn-primary btn-xs" data-jbs-vars="'+element.getAttribute('data-jbs-vars')+'" type="button" tabindex="0"><i class="bi bi-code"></i></button>';
     element.insertAdjacentHTML('beforeend', button);
   }
 

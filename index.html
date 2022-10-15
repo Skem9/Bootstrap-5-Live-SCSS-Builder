@@ -1468,7 +1468,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>Modals</h2>
-            <div class="bs-component">
+            <div class="bs-component" data-jbs-vars="modal">
               <div class="modal">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -1490,7 +1490,7 @@
               </div>
             </div>
             <h2>Offcanvas</h2>
-            <div class="bs-component">
+            <div class="bs-component" data-jbs-vars="offcanvas">
               <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 Link with href
               </a>
@@ -1523,7 +1523,7 @@
           </div>
           <div class="col-lg-6">
             <h2>Popovers</h2>
-            <div class="bs-component mb-5">
+            <div class="bs-component mb-5" data-jbs-vars="tooltips-and-popovers">
               <button type="button" class="btn btn-secondary" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
 
               <button type="button" class="btn btn-secondary" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
@@ -1533,7 +1533,7 @@
               <button type="button" class="btn btn-secondary" title="Popover Title" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
             </div>
             <h2>Tooltips</h2>
-            <div class="bs-component mb-5">
+            <div class="bs-component mb-5" data-jbs-vars="tooltips-and-popovers">
               <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Left</button>
 
               <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Top</button>
@@ -1543,7 +1543,7 @@
               <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Right</button>
             </div>
             <h2>Toasts</h2>
-            <div class="bs-component">
+            <div class="bs-component" data-jbs-vars="alert-and-toast">
               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                   <strong class="me-auto">Bootstrap</strong>
@@ -1562,14 +1562,42 @@
       </div>
 
       <div id="source-modal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title">Source Code</h4>
               <button type="button" class="btn btn-primary btn-copy"><i class="bi bi-clipboard"></i> Copy Code</button>
             </div>
             <div class="modal-body">
-              <pre class="language-html"><code></code></pre>
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="html-tab" data-bs-toggle="tab"
+										data-bs-target="#html-tab-pane" type="button"
+										role="tab" aria-controls="home-tab-pane" aria-selected="true">
+										HTML
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="scss-tab" data-bs-toggle="tab"
+										data-bs-target="#scss-tab-pane" type="button"
+										role="tab" aria-controls="scss-tab-pane" aria-selected="false">
+										SCSS
+									</button>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="html-tab-pane"
+									role="tabpanel" aria-labelledby="html-tab" tabindex="0">
+									<h5>HTML</h5>
+									<pre class="language-html"><code></code></pre>
+								</div>
+								<div class="tab-pane fade" id="scss-tab-pane"
+									role="tabpanel" aria-labelledby="scss-tab" tabindex="0">
+									<h5>SCSS Variables</h5>
+									<pre class="language-scss"><code></code></pre>
+								</div>
+							</div>
+
             </div>
           </div>
         </div>
