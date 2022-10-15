@@ -79,13 +79,21 @@
       sourceModalElement.querySelector('.language-html code').innerHTML = html;
 			// then find the scss files to load..
 			let scss_var = event.target.parentNode.getAttribute('data-jbs-vars')
-			getSass('../Brandy/var/'+scss_var+'.scss')
+			let z = scss_var.split(','), zl = z.length
+			if(z.length > 1){
+				for (var i=0;i <= zl; ++i){
+
+				}
+				getSass('../Brandy/var/'+z[0]+'.scss')
+			} else {
+				getSass('../Brandy/var/'+scss_var+'.scss')
+			}
 			//sourceModalElement.querySelector('.language-sass code').innerHTML = html;
 			async function getSass(file) {
-				let x = await fetch(file);
-				let y = await x.text();
-				sass = Prism.highlight(y, Prism.languages.css, 'css');
-				sourceModalElement.querySelector('.language-scss code').innerHTML = sass;
+					let x = await fetch(file);
+					let y = await x.text();
+					sass = Prism.highlight(y, Prism.languages.css, 'css');
+					sourceModalElement.querySelector('.language-scss code').innerHTML = sass;
 			}
       sourceModal.show();
     }, false);
