@@ -6,7 +6,7 @@ image:
 
 ports:
   - port: 5000
-    onOpen: ignore
+    onOpen: open-preview
 
 tasks:
   - name: install pre-commit git hooks
@@ -23,12 +23,12 @@ tasks:
     command: |
       gp ports await 5000
       REPO=localhost:5000/dazzle
-      echo "To build specific chunks and combine them 'time ./build-chunk.sh  -c chunk1 -c chunk2:variant1.2.3 -n combo'"
-      echo "To build all the chunks and combinations 'time ./build-all.sh'"
-      echo "To build a specific combination 'time ./build-combo.sh combo'"
-      echo "To list image chunks 'dazzle project image-name $REPO'"
-      echo "To list hashes for image chunks 'dazzle project hash $REPO'"
-      echo "To print the combined image maniest 'dazzle project manifest $REPO'"
+#      echo "To build specific chunks and combine them 'time ./build-chunk.sh  -c chunk1 -c chunk2:variant1.2.3 -n combo'"
+#      echo "To build all the chunks and combinations 'time ./build-all.sh'"
+#      echo "To build a specific combination 'time ./build-combo.sh combo'"
+#      echo "To list image chunks 'dazzle project image-name $REPO'"
+#      echo "To list hashes for image chunks 'dazzle project hash $REPO'"
+#      echo "To print the combined image maniest 'dazzle project manifest $REPO'"
     openMode: tab-after
   - init: npm install
   - name: Web Browser
@@ -37,7 +37,7 @@ tasks:
       WEBSERVER_PORT: 8080
     command: |
       gp await-port $WEBSERVER_PORT
-      lynx `gp url`
+      lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
   - name: open scss file
     command: gp open Brandy/css.scss
 
