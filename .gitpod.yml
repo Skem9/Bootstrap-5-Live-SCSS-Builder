@@ -38,6 +38,8 @@ tasks:
     command: |
       gp await-port $WEBSERVER_PORT
       lynx `gp url`
+  - name: open scss file
+    command: gp open Brandy/css.scss
 
 
 github:
