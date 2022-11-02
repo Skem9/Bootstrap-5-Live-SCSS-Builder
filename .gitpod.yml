@@ -4,8 +4,8 @@
 image:
   file: .gitpod.Dockerfile
 
-#ports:
-#  - port: 5000
+ports:
+  - port: 5555
 #    onOpen: open-preview
 
 tasks:
@@ -34,7 +34,7 @@ tasks:
     command: |
       echo "Launching Web Server"
       five-server
-      gp await-port $WEBSERVER_PORT
+      gp ports await $WEBSERVER_PORT
       echo "Loading Browser"
       lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
 
