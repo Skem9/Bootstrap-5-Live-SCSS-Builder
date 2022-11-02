@@ -33,7 +33,7 @@ tasks:
       WEBSERVER_PORT: 5555
     command: |
       echo "Launching Web Server"
-      five-server
+      npx five-server
       gp ports await $WEBSERVER_PORT
       echo "Loading Browser"
       lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
