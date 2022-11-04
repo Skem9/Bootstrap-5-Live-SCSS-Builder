@@ -15,7 +15,7 @@ vscode:
     - kamikillerto.vscode-colorize
     - aaron-bond.better-comments
     - streetsidesoftware.code-spell-checker
-     
+
 tasks:
   - name: install pre-commit git hooks
     init: pre-commit install
@@ -37,12 +37,12 @@ tasks:
   - init: npm install
   - name: Web Browser
     openMode: split-right
-    env:
-      WEBSERVER_PORT: 5555
+    #env:
+    #  WEBSERVER_PORT: 5555
     command: |
       echo "Launching Web Server"
       npx exec five-server
-      gp ports await $WEBSERVER_PORT
+      gp ports await 5555
       echo "Loading Browser"
       lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
 
@@ -64,5 +64,3 @@ github:
     addBadge: true
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
-    
-
