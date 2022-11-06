@@ -42,6 +42,7 @@ tasks:
     #npx exec five-server
     command: |
       echo "Launching Web Server"
+      npm install
       code --install-extension yandeu.five-server
       code --install-extension glenn2223.live-sass
       code --enable-proposed-api yandeu.five-server
