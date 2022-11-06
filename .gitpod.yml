@@ -39,7 +39,7 @@ tasks:
       gp ports await 5000
       REPO=localhost:5000/dazzle
     openMode: tab-after
-  - init: npm install
+    init: npm install
   - name: Web Browser
     openMode: split-right
     #env:
