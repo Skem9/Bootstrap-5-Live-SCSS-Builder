@@ -32,7 +32,7 @@ tasks:
   - name: start a local docker registry
     command: |
       mkdir -p /workspace/registry
-      docker run -p 5000:5000 --name registry --rm -v /workspace/registry:/var/lib/registry registry:2
+
     openMode: split-right
   - name: dazzle build and test
     command: |
