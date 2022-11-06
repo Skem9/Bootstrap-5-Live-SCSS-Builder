@@ -39,10 +39,15 @@ tasks:
     openMode: split-right
     #env:
     #  WEBSERVER_PORT: 5555
+    #npx exec five-server
     command: |
       echo "Launching Web Server"
-      npx exec five-server
+      code --install-extension yandeu.five-server
+      code --install-extension glenn2223.live-sass
+      code --enable-proposed-api yandeu.five-server
+      code --enable-proposed-api glenn2223.live-sass"
       gp ports await 5555
+      npx five-server --open="index.html
       echo "Loading Browser"
       lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
 
