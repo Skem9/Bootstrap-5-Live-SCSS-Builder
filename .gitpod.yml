@@ -6,7 +6,10 @@ image:
 
 ports:
   - port: 5555
-#    onOpen: open-preview
+    onOpen: open-preview
+    name: Website
+    description: Website Preview
+
 
 vscode:
   extensions:
@@ -20,7 +23,9 @@ tasks:
   - name: install pre-commit git hooks
     init: pre-commit install
   - name: open scss file
-    command: gp open Brandy/css.scss
+    command: |
+      gp open Brandy/css.scss
+      npx five-server --open="index.html"
   - name: start up buildkitd
     command: |
       sudo /usr/bin/buildkitd --debug  --config ./buildkitd.toml --group gitpod
