@@ -47,7 +47,7 @@ tasks:
       code --enable-proposed-api yandeu.five-server
       code --enable-proposed-api glenn2223.live-sass"
       gp ports await 5555
-      npx five-server --open="index.html
+      npx five-server --open="index.html"
       echo "Loading Browser"
       lynx `gp url $GITPOD_WORKSPACE_URL:$WEBSERVER_PORT/index.html`
 
